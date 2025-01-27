@@ -11,10 +11,8 @@ class Calculation extends Model
 
     protected $fillable = ['user_id', 'operation', 'numbers', 'result'];
 
-    /**
-     * Aksesorius, kad automatiškai dekoduotų JSON `numbers` stulpelį.
-     */
+
     protected $casts = [
-        'numbers' => 'array', // Automatiškai konvertuoja iš JSON į PHP masyvą
+        'numbers' => 'array',
     ];
 }
